@@ -1,0 +1,179 @@
+fileFormatVersion: 2
+guid: 7457b504431ce294f9aeaa3c1aa678e7
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Mesh1
+    100002: //RootNode
+    100004: v_weapon
+    100006: v_weapon.attachment1
+    100008: v_weapon.attachment2
+    100010: v_weapon.bolt
+    100012: v_weapon.eff18
+    100014: v_weapon.galil
+    100016: v_weapon.handle
+    100018: v_weapon.Hands_parent
+    100020: v_weapon.L_wrist_helper
+    100022: v_weapon.latch
+    100024: v_weapon.Left_Arm
+    100026: v_weapon.Left_Hand
+    100028: v_weapon.Left_Index01
+    100030: v_weapon.Left_Index02
+    100032: v_weapon.Left_Index03
+    100034: v_weapon.Left_Middle01
+    100036: v_weapon.Left_Middle02
+    100038: v_weapon.Left_Middle03
+    100040: v_weapon.Left_Pinky01
+    100042: v_weapon.Left_Pinky02
+    100044: v_weapon.Left_Pinky03
+    100046: v_weapon.Left_Ring01
+    100048: v_weapon.Left_Ring02
+    100050: v_weapon.Left_Ring03
+    100052: v_weapon.Left_Thumb01
+    100054: v_weapon.Left_Thumb02
+    100056: v_weapon.Left_Thumb03
+    100058: v_weapon.magazine
+    100060: v_weapon.R_wrist_helper
+    100062: v_weapon.Right_Arm
+    100064: v_weapon.Right_Hand
+    100066: v_weapon.Right_Index01
+    100068: v_weapon.Right_Index02
+    100070: v_weapon.Right_Index03
+    100072: v_weapon.Right_Middle01
+    100074: v_weapon.Right_Middle02
+    100076: v_weapon.Right_Middle03
+    100078: v_weapon.Right_Pinky01
+    100080: v_weapon.Right_Pinky02
+    100082: v_weapon.Right_Pinky03
+    100084: v_weapon.Right_Ring01
+    100086: v_weapon.Right_Ring02
+    100088: v_weapon.Right_Ring03
+    100090: v_weapon.Right_Thumb01
+    100092: v_weapon.Right_Thumb02
+    100094: v_weapon.Right_Thumb03
+    100096: v_weapon.Root23
+    100098: v_weapon.Root36
+    100100: v_weapon.trigger
+    400000: Mesh1
+    400002: //RootNode
+    400004: v_weapon
+    400006: v_weapon.attachment1
+    400008: v_weapon.attachment2
+    400010: v_weapon.bolt
+    400012: v_weapon.eff18
+    400014: v_weapon.galil
+    400016: v_weapon.handle
+    400018: v_weapon.Hands_parent
+    400020: v_weapon.L_wrist_helper
+    400022: v_weapon.latch
+    400024: v_weapon.Left_Arm
+    400026: v_weapon.Left_Hand
+    400028: v_weapon.Left_Index01
+    400030: v_weapon.Left_Index02
+    400032: v_weapon.Left_Index03
+    400034: v_weapon.Left_Middle01
+    400036: v_weapon.Left_Middle02
+    400038: v_weapon.Left_Middle03
+    400040: v_weapon.Left_Pinky01
+    400042: v_weapon.Left_Pinky02
+    400044: v_weapon.Left_Pinky03
+    400046: v_weapon.Left_Ring01
+    400048: v_weapon.Left_Ring02
+    400050: v_weapon.Left_Ring03
+    400052: v_weapon.Left_Thumb01
+    400054: v_weapon.Left_Thumb02
+    400056: v_weapon.Left_Thumb03
+    400058: v_weapon.magazine
+    400060: v_weapon.R_wrist_helper
+    400062: v_weapon.Right_Arm
+    400064: v_weapon.Right_Hand
+    400066: v_weapon.Right_Index01
+    400068: v_weapon.Right_Index02
+    400070: v_weapon.Right_Index03
+    400072: v_weapon.Right_Middle01
+    400074: v_weapon.Right_Middle02
+    400076: v_weapon.Right_Middle03
+    400078: v_weapon.Right_Pinky01
+    400080: v_weapon.Right_Pinky02
+    400082: v_weapon.Right_Pinky03
+    400084: v_weapon.Right_Ring01
+    400086: v_weapon.Right_Ring02
+    400088: v_weapon.Right_Ring03
+    400090: v_weapon.Right_Thumb01
+    400092: v_weapon.Right_Thumb02
+    400094: v_weapon.Right_Thumb03
+    400096: v_weapon.Root23
+    400098: v_weapon.Root36
+    400100: v_weapon.trigger
+    4300000: Mesh1
+    7400000: draw
+    7400002: idle
+    7400004: reload
+    7400006: shoot1
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Mesh1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
