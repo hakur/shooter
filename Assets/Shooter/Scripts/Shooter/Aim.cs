@@ -112,7 +112,8 @@ public class Aim : MonoBehaviour {
 		weaponCamera.fieldOfView = Mathf.Lerp(weaponCamera.fieldOfView,weaponCameraFOV,fovSpeed);
 		if(weapon.type == Weapon.types.sniper) {
 			scopeObj.active = true;
-			aimHideModel.SetActive(false);
+			//aimHideModel.SetActive(false);
+			aimHideModel.transform.localPosition = new Vector3(aimHideModel.transform.localPosition.x,5f,aimHideModel.transform.localPosition.z);
 		} else {
 			Quaternion rotTo = Quaternion.Slerp(transform.localRotation,Quaternion.Euler(rot.x,rot.y,rot.z),aimSpeed);
 			Vector3 posTo = Vector3.Slerp(transform.localPosition,pos,aimSpeed);
@@ -127,7 +128,8 @@ public class Aim : MonoBehaviour {
 		weaponCamera.fieldOfView = Mathf.Lerp(weaponCamera.fieldOfView,originWeaponCmeraFov,fovSpeed);
 		if(weapon.type == Weapon.types.sniper) {
 			scopeObj.active = false;
-			aimHideModel.SetActive(true);
+			//aimHideModel.SetActive(true);
+			aimHideModel.transform.localPosition = Vector3.zero;
 		} else {
 			Quaternion rotTo = Quaternion.Slerp(transform.localRotation,Quaternion.Euler(originRot.x,originRot.y,originRot.z),aimSpeed);
 			Vector3 posTo = Vector3.Slerp(transform.localPosition,originPos,aimSpeed);
