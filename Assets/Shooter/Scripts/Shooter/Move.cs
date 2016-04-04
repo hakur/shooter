@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 using System.Collections;
 namespace Shooter {
 public class Move : MonoBehaviour {
 	private float inputX = 0f;
 	private float inputY = 0f;
-	private float inputModifyFactor = 0f; //同时朝着两个方向移动的减速率
+	private float inputModifyFactor = 0f; //同时朝着两个方向移动的减速率 moving drag if press w+a or w+d
 	private CharacterController cc;
 	private float rayDistance = 0f;
 	private RaycastHit hit;
@@ -28,10 +29,17 @@ public class Move : MonoBehaviour {
 	public float ccCrouchHeight = 1.2f;
 	private float fallDistance = 0;
 	private Vector3 lastPosition;
+	private float moveDrag = 0f;
 	
 	private bool usingFallEffect;
 	
 	private float highestPoint;
+	
+	public float weaponWeight;
+	
+	private float weaponWeightDragPerKG = 0.02f; //武器1kg的重量将会影响玩家多少移动速度
+	
+	public NetworkSync netVar;
 	[HideInInspector]
 	public bool isFalling;
 	
@@ -47,44 +55,50 @@ public class Move : MonoBehaviour {
 	}
 	
 	void Update () {
-		inputX = Input.GetAxis("Horizontal");
-		inputY = Input.GetAxis("Vertical");
-		//inputModifyFactor = (inputX != 0.0f && inputY != 0.0f)? 0.7071f : 1.0f;
-		//inputModifyFactor = 1;
-		
-		if (Physics.Raycast(transform.position, -Vector3.up, out hit, rayDistance)){ //向下方发射一条射线
-			//Debug.Log(hit.collider.gameObject);
+		if(netVar.isMinePlayer) {
+			inputX = Input.GetAxis("Horizontal");
+			inputY = Input.GetAxis("Vertical");
+			inputModifyFactor = (inputX != 0.0f && inputY != 0.0f)? 0.7071f : 1.0f;
+			
+			if (Physics.Raycast(transform.position, -Vector3.up, out hit, rayDistance)){ //向下方发射一条射线
+				
+			}
+			
+			moveDrag = 1 - weaponWeightDragPerKG * weaponWeight; //移动减速 moving drag beacause weapon weight
 		}
 	}
 	
 	void FixedUpdate() {
-		stateCheck(); //检查蹲伏状态
-		if(usingFallEffect) {
-			fallEffect.localPosition = Vector3.Slerp(fallEffect.localPosition,new Vector3(fallEffect.localPosition.x,-0.2f,fallEffect.localPosition.z),Time.deltaTime * 10f);
-		} else {
-			fallEffect.localPosition = Vector3.Slerp(fallEffect.localPosition,new Vector3(fallEffect.localPosition.x,0f,fallEffect.localPosition.z),Time.deltaTime * 10f);
+		if(netVar.isMinePlayer) {
+			stateCheck(); //检查蹲伏状态 check if crouch button pressed
+			if(usingFallEffect) {
+				fallEffect.localPosition = Vector3.Slerp(fallEffect.localPosition,new Vector3(fallEffect.localPosition.x,-0.2f,fallEffect.localPosition.z),Time.deltaTime * 10f);
+			} else {
+				fallEffect.localPosition = Vector3.Slerp(fallEffect.localPosition,new Vector3(fallEffect.localPosition.x,0f,fallEffect.localPosition.z),Time.deltaTime * 10f);
+			}
+			netVar.playerPos = transform.position;
 		}
 	}
 	
 	void LateUpdate() {
-		move();
-		fallCheck();
-		lastPosition = transform.position;
+		if(netVar.isMinePlayer) {
+			move();
+			fallCheck();
+			lastPosition = transform.position;
+		}
 	}
 
 	void move() {
 		if(moveDirection.y > -jumpSpeed) {
 			moveDirection.y += Physics.gravity.y * Time.deltaTime * gravity;
 		}
+		moveDirection.z = moveDirection.x = 0;
 		if(Cursor.lockState == CursorLockMode.Locked) {
-			moveDirection.x = inputX * speed;
-			moveDirection.z = inputY * speed;
-			if(cc.isGrounded == false) {
-				//moveDirection.y += Physics.gravity.y * Time.deltaTime;
-			}
-
+			moveDirection.x = inputX * speed * inputModifyFactor * moveDrag;
+			moveDirection.z = inputY * speed * inputModifyFactor * moveDrag;
 			if (Input.GetButtonDown("Jump") && (cc.isGrounded == true)) {
 				moveDirection.y = jumpSpeed;
+				netVar.jumping = true;
 			}
 		}
 		moveDirection = transform.TransformDirection(moveDirection);
@@ -92,7 +106,7 @@ public class Move : MonoBehaviour {
 	}
 	
 	void stateCheck() {
-		if(Input.GetKey("left ctrl")) {
+		if(Input.GetButton("Crouch")) {
 			status.state = Status.states.crouch;
 			cc.height = ccCrouchHeight;
 			speed = originSpeed / 2;
@@ -125,6 +139,7 @@ public class Move : MonoBehaviour {
 		}
 		
 		if (cc.isGrounded) {
+			netVar.jumping = false;
 			isFalling = false;
 			fallDistance = highestPoint - transform.position.y;
 			if(fallDistance > 1){

@@ -24,8 +24,8 @@ public class Aim : MonoBehaviour {
 	private float originWeaponCmeraFov; //武器摄像机原始FOV
 	private Vector3 originPos; //原始的transform.localPosition
 	private Vector3 originRot; //原始的transform.localRotation
-	private Camera weaponCamera; //武器摄像机
-	private Camera mainCamera; //主摄像机
+	public Camera weaponCamera; //武器摄像机
+	public Camera mainCamera; //主摄像机
 	private Weapon weapon; //武器脚本
 	[HideInInspector]
 	public Image sniperScopeImg;
@@ -39,21 +39,10 @@ public class Aim : MonoBehaviour {
 	public GameObject crosshair;
 	void Awake() {
 		weapon = GetComponent<Weapon>();
-		weaponCamera = GameObject.FindWithTag("WeaponCamera").GetComponent<Camera>();
-		mainCamera = Camera.main;
 		originPos = transform.localPosition;
 		originRot = new Vector3(transform.localRotation.x,transform.localRotation.y,transform.localRotation.z);
 		originMainCameraFov = mainCamera.fieldOfView;
 		originWeaponCmeraFov = weaponCamera.fieldOfView;
-		//抵消后坐力
-		//weapon.recoilShotAim = weapon.recoilShot * antiRecoilRate;
-		//weapon.recoilShotAimMax = weapon.recoilShotMax * antiRecoilRate;
-		//if(weapon.type == Weapon.types.sniper) {
-			//sniperScopeImg = GameObject.Find("SniperScopeShell").GetComponent<Image>();
-			//scopeObj = GameObject.Find("SniperScope");
-		//}
-		//Debug.Log(GameObject.Find("SniperScopeShell"));
-		//crosshair = GameObject.Find("CrossHair");
 	}
 	
 	void OnEnable() {
@@ -64,10 +53,7 @@ public class Aim : MonoBehaviour {
 	
 	void Start() {
 		if(weapon.type == Weapon.types.sniper) {
-			//RectTransform rt = UICanvas.GetComponent (typeof (RectTransform)) as RectTransform;
-			//rt.sizeDelta = new Vector2 (100, 100);
 			RectTransform rt = sniperScopeImg.gameObject.GetComponent<RectTransform>();
-			//rt.sizeDelta = new Vector2(Screen.width,Screen.width);
 			sniperScopeImg.sprite  = sniperScope;
 			
 			Color c = sniperScopeImg.color;
@@ -76,7 +62,6 @@ public class Aim : MonoBehaviour {
 			scopeObj.active = false;
 			sniperZeroLevelCameraFov = mainCameraFOV;
 		}
-		//scopeObj = sniperScopeImg.gameObject;
 	}
 	
 	void LateUpdate() {
@@ -112,8 +97,7 @@ public class Aim : MonoBehaviour {
 		weaponCamera.fieldOfView = Mathf.Lerp(weaponCamera.fieldOfView,weaponCameraFOV,fovSpeed);
 		if(weapon.type == Weapon.types.sniper) {
 			scopeObj.active = true;
-			//aimHideModel.SetActive(false);
-			aimHideModel.transform.localPosition = new Vector3(aimHideModel.transform.localPosition.x,5f,aimHideModel.transform.localPosition.z);
+			aimHideModel.transform.localScale = new Vector3(0.01f,0.01f,0);
 		} else {
 			Quaternion rotTo = Quaternion.Slerp(transform.localRotation,Quaternion.Euler(rot.x,rot.y,rot.z),aimSpeed);
 			Vector3 posTo = Vector3.Slerp(transform.localPosition,pos,aimSpeed);
@@ -128,8 +112,7 @@ public class Aim : MonoBehaviour {
 		weaponCamera.fieldOfView = Mathf.Lerp(weaponCamera.fieldOfView,originWeaponCmeraFov,fovSpeed);
 		if(weapon.type == Weapon.types.sniper) {
 			scopeObj.active = false;
-			//aimHideModel.SetActive(true);
-			aimHideModel.transform.localPosition = Vector3.zero;
+			aimHideModel.transform.localScale = Vector3.one;
 		} else {
 			Quaternion rotTo = Quaternion.Slerp(transform.localRotation,Quaternion.Euler(originRot.x,originRot.y,originRot.z),aimSpeed);
 			Vector3 posTo = Vector3.Slerp(transform.localPosition,originPos,aimSpeed);

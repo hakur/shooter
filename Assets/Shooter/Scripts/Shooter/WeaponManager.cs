@@ -16,13 +16,22 @@ public class WeaponManager : MonoBehaviour {
 	public RectTransform rightCrossHair;
 	public RectTransform upCrossHair;
 	public RectTransform downCrossHair;
+	public Move playerMove;
+	public Camera weaponCamera;
+	public Camera worldCamera;
+	public CharacterController cc;
+	public Transform kickview;
+	public NetworkSync netVar;
+	public AudioSource weaponSound;
+	public Text ammoFront;
+	public Text ammoBack;
+	public GameObject throwThing;
 	void Awake() {
-		//sniperScopeImg = GameObject.Find("SniperScopeShell").GetComponent<Image>();
-		//crosshair = GameObject.Find("CrossHair");
+		init();
 	}
 	
 	void  Start() {
-		init();
+		
 		if(weapons[0] != null) {
 			useWeapon(0);
 			setUse(0);
@@ -73,7 +82,9 @@ public class WeaponManager : MonoBehaviour {
 		
 		currentIndex = i;
 		current = weapons[i];
-		current.GetComponent<Weapon>().init();
+		w = current.GetComponent<Weapon>();
+		w.init();
+		playerMove.weaponWeight = w.weight;
 	}
 	
 	void init() {
@@ -91,14 +102,26 @@ public class WeaponManager : MonoBehaviour {
 				aim.sniperScopeImg = sniperScopeImg;
 				aim.crosshair = crosshair;
 				aim.scopeObj = sniperScopeImg.gameObject;
+				aim.weaponCamera = weaponCamera;
+				aim.mainCamera = worldCamera;
 				CrossHair cross = weapons[i].GetComponent<CrossHair>();
+				Weapon w = weapons[i].GetComponent<Weapon>();
+				w.slotIndex = i;
+				w.kickGO = kickview;
+				w.netVar = netVar;
+				w.cc = cc;
+				w.ammoFront = ammoFront;
+				w.ammoBack = ammoBack;
+				w.sound = weaponSound;
+				GunFire gf = weapons[i].GetComponent<GunFire>();
+				gf.manager = this;
+				gf.throwThing = throwThing;
 				if(cross != null) {
 					cross.down = downCrossHair;
 					cross.up = upCrossHair;
 					cross.right = rightCrossHair;
 					cross.left = leftCrossHair;
 				}
-			//scopeObj = GameObject.Find("SniperScope");;
 			}
 		}
 	}
@@ -108,22 +131,27 @@ public class WeaponManager : MonoBehaviour {
 		}
 	}
 	
-	bool IsPrefab(this Transform This)
-     {
-         var TempObject = new GameObject();
+	bool IsPrefab(this Transform This) {
+         GameObject TempObject = new GameObject();
          try
          {
              TempObject.transform.parent = This.parent;
-             var OriginalIndex = This.GetSiblingIndex();
+             int OriginalIndex = This.GetSiblingIndex();
              This.SetSiblingIndex(int.MaxValue);
              if (This.GetSiblingIndex() == 0) return true;
              This.SetSiblingIndex(OriginalIndex);
              return false;
-         }
-         finally
-         {
+         } 
+		 finally {
              Object.DestroyImmediate(TempObject);
          }
-     }
+    }
+	 
+	public void DropWeapon(int i) {
+		if(weapons[i] != null) {
+			weapons[i].GetComponent<Weapon>().selected = false;
+			weapons[i] = null;
+		}
+	}
 }
 }

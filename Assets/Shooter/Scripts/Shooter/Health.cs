@@ -1,20 +1,15 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.UI;
 using System.Collections;
 
-public class Health : MonoBehaviour {
+public class Health : NetworkBehaviour {
 	public float hp = 100;
 	public float hpmax = 100;
 	
-	private Text HPText;
+	public Text HPText;
 	private Image HPMask;
 	private Image HPShellBG;
-	
-	void Awake() {
-		HPText = GameObject.Find("HPNum").GetComponent<Text>();
-		//HPMask = GameObject.Find("HPMask").GetComponent<Image>();
-		//HPShellBG = GameObject.Find("HPShellBG").GetComponent<Image>();
-	}
 	
 	void Start () {
 		if(hp > hpmax) {
@@ -23,7 +18,9 @@ public class Health : MonoBehaviour {
 	}
 	
 	void Update () {
-		HPText.text = Mathf.CeilToInt(hp).ToString();
+		if(isLocalPlayer) {
+			HPText.text = Mathf.CeilToInt(hp).ToString();
+		}
 	}
 	
 	void ApplyDamage(float h) {

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine;
 using System.Collections;
 namespace Shooter {
 public class MouseLook : MonoBehaviour {
@@ -18,23 +19,27 @@ public class MouseLook : MonoBehaviour {
 	public float offsetX = 0F;
 
 	public float rotationX = 0F;
-	GameObject cmra = null;
+	public GameObject cmra = null;
 
 	public float rotationY = 0F;
 	
 	Quaternion originalRotation;
+	public NetworkSync netVar;
 
 	void Start ()
 	{
-		cmra = GameObject.FindWithTag("MainCamera");
-		// Make the rigid body not change rotation
 		if (GetComponent<Rigidbody>())
 			GetComponent<Rigidbody>().freezeRotation = true;
 		originalRotation = transform.localRotation;
 	}
-	
+	void Update() {
+		if (axes == RotationAxes.MouseX) {
+			netVar.playerRotX = transform.rotation.eulerAngles.y;
+		} else if (axes == RotationAxes.MouseY) {
+			netVar.playerRotY = transform.rotation.eulerAngles.x;
+		}
+	}
 	void LateUpdate (){
-	
 		if(Cursor.lockState == CursorLockMode.None) return;
 
 		if (axes == RotationAxes.MouseXAndY) {

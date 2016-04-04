@@ -2,6 +2,10 @@
 using System.Collections;
 namespace Shooter {
 public class Debuger : MonoBehaviour {
+	void Awake() {
+		Application.targetFrameRate = 3000;
+	}
+
 	void Update () {
 		lockMouse();
 	}

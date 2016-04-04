@@ -8,11 +8,6 @@ public class WeaponSound : MonoBehaviour {
 	public AudioClip soundClipIn;
 	public AudioClip soundClipOut;
 	public AudioClip soundLoad;
-	void Awake() {
-		if(sound == null) {
-			sound = GameObject.FindWithTag("WeaponSound").GetComponent<AudioSource>();
-		}
-	}
 	
 	void draw() {
 		sound.PlayOneShot(soundDraw);

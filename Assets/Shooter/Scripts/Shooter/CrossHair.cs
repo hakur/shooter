@@ -28,10 +28,6 @@ public class CrossHair : MonoBehaviour {
 		
 	void Awake() {
 		weapon = gameObject.GetComponent<Weapon>();
-		//left = GameObject.Find("LeftCrossHair").GetComponent<RectTransform>();
-		//right = GameObject.Find("RightCrossHair").GetComponent<RectTransform>();
-		//up = GameObject.Find("UpCrossHair").GetComponent<RectTransform>();
-		//down = GameObject.Find("DownCrossHair").GetComponent<RectTransform>();
 	}
 	
 	void Start() {
