@@ -7,15 +7,13 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Shooter/Scenes/shooter_start.unity
-  - enabled: 0
-    path: Assets/Shooter/Scenes/shooter_sample.unity
-  - enabled: 0
-    path: Assets/test.unity
   - enabled: 1
-    path: Assets/Shooter/Scenes/ship.unity
+    path: Assets/Shooter/Scenes/map_cfShip.unity
   - enabled: 1
     path: Assets/Shooter/Scenes/select_map.unity
   - enabled: 1
     path: Assets/Shooter/Scenes/loading.unity
   - enabled: 1
-    path: Assets/Shooter/Scenes/test.unity
+    path: Assets/Shooter/Scenes/map_otherMap.unity
+  - enabled: 1
+    path: Assets/Shooter/Scenes/map_csAssault.unity

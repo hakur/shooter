@@ -155,8 +155,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1071403369}
-  - 114: {fileID: 1071403368}
   - 114: {fileID: 1071403367}
+  - 114: {fileID: 1071403370}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: NetworkManager
@@ -179,7 +179,19 @@ MonoBehaviour:
   showGUI: 1
   offsetX: 0
   offsetY: 0
---- !u!114 &1071403368
+--- !u!4 &1071403369
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1071403366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.705983, y: 9.411697, z: -18.97312}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+--- !u!114 &1071403370
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -187,13 +199,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1071403366}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -822479833, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Script: {fileID: 11500000, guid: e9ad29d295305ee4988957113d05a591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_NetworkPort: 7777
-  m_ServerBindToIP: 1
-  m_ServerBindAddress: 127.0.0.1
-  m_NetworkAddress: 127.0.0.1
+  m_ServerBindToIP: 0
+  m_ServerBindAddress: 
+  m_NetworkAddress: localhost
   m_DontDestroyOnLoad: 1
   m_RunInBackground: 1
   m_ScriptCRCCheck: 1
@@ -203,7 +215,7 @@ MonoBehaviour:
   m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 1
   m_OfflineScene: shooter_start
-  m_OnlineScene: ship
+  m_OnlineScene: select_map
   m_SpawnPrefabs: []
   m_CustomConfig: 0
   m_MaxConnections: 4
@@ -233,7 +245,7 @@ MonoBehaviour:
     m_ReactorMaximumReceivedMessages: 1024
     m_ReactorMaximumSentMessages: 1024
     m_MaxPacketSize: 2000
-  m_Channels: 0500000000000000
+  m_Channels: 
   m_UseWebSockets: 0
   m_UseSimulator: 0
   m_SimulatedLatency: 1
@@ -244,18 +256,7 @@ MonoBehaviour:
   matchMaker: {fileID: 0}
   matchName: default
   matchSize: 4
---- !u!4 &1071403369
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1071403366}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.705983, y: 9.411697, z: -18.97312}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  playerControllerId: 0
 --- !u!1 &1182386423
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,7 +469,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1688261290
 AudioSource:
   m_ObjectHideFlags: 0
