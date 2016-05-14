@@ -2786,13 +2786,14 @@ GameObject:
   - 4: {fileID: 446852}
   - 33: {fileID: 3383706}
   - 23: {fileID: 2380578}
+  - 136: {fileID: 13692052}
   m_Layer: 0
   m_Name: ThirdPersonPlayer0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &144904
 GameObject:
   m_ObjectHideFlags: 1
@@ -3232,7 +3233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &151414
 GameObject:
   m_ObjectHideFlags: 1
@@ -3930,7 +3931,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &159466
 GameObject:
   m_ObjectHideFlags: 1
@@ -5369,7 +5370,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &181838
 GameObject:
   m_ObjectHideFlags: 1
@@ -11872,7 +11873,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 45
   orthographic: 0
@@ -13126,6 +13127,7 @@ MonoBehaviour:
   slotIndex: 0
   weight: 1
   netVar: {fileID: 0}
+  useSide: 0
   selected: 0
   damage: 60
   bulletsLeft: 7
@@ -13135,7 +13137,9 @@ MonoBehaviour:
   range: 250
   kickGO: {fileID: 417974}
   kickUp: 3
-  kickSideways: 0.1
+  kickSideMax: 0.5
+  kickSideStart: 0.08
+  kickSideEnd: 0.2
   sound: {fileID: 0}
   ammoFront: {fileID: 0}
   ammoBack: {fileID: 0}
@@ -13197,6 +13201,17 @@ MonoBehaviour:
   isAuto: 0
   throwThing: {fileID: 0}
   manager: {fileID: 0}
+  reverse7: 0
+  spreadYShot: 0.008
+  recoil: 0
+  deRecoil: 2
+  addRecoil: 0.5
+  recoilMax: 3
+  recoilRangeStart: 0.01
+  recoilRangeEnd: 0.9
+  x: 0
+  y: 0
+  spreadY: 0.5
 --- !u!114 &11406556
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13256,6 +13271,7 @@ MonoBehaviour:
   slotIndex: 0
   weight: 1
   netVar: {fileID: 0}
+  useSide: 0
   selected: 0
   damage: 40
   bulletsLeft: 30
@@ -13265,7 +13281,9 @@ MonoBehaviour:
   range: 250
   kickGO: {fileID: 417974}
   kickUp: 1
-  kickSideways: 0.5
+  kickSideMax: 0.5
+  kickSideStart: 0.08
+  kickSideEnd: 0.4
   sound: {fileID: 0}
   ammoFront: {fileID: 0}
   ammoBack: {fileID: 0}
@@ -13333,6 +13351,17 @@ MonoBehaviour:
   isAuto: 0
   throwThing: {fileID: 0}
   manager: {fileID: 0}
+  reverse7: 0
+  spreadYShot: 0.008
+  recoil: 0
+  deRecoil: 2
+  addRecoil: 0.5
+  recoilMax: 3
+  recoilRangeStart: 0.01
+  recoilRangeEnd: 0.9
+  x: 0
+  y: 0
+  spreadY: 0.5
 --- !u!114 &11416672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13543,7 +13572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8270880}
   soundDraw: {fileID: 8300000, guid: f2a10e343d245d143bcc38d2eab97f56, type: 3}
-  soundFire: {fileID: 8300000, guid: 552ecb64efbb1fb458282010cf3d337a, type: 3}
+  soundFire: {fileID: 8300000, guid: 1717e11c0123be44b8c7166c61185879, type: 3}
   soundClipIn: {fileID: 8300000, guid: 5422581598d9f9643bcad1856b4de568, type: 3}
   soundClipOut: {fileID: 8300000, guid: d494d84714f3efe449ae8cc7df6e156a, type: 3}
   soundLoad: {fileID: 0}
@@ -13595,6 +13624,17 @@ MonoBehaviour:
   isAuto: 1
   throwThing: {fileID: 0}
   manager: {fileID: 0}
+  reverse7: 0
+  spreadYShot: 0.008
+  recoil: 0
+  deRecoil: 2
+  addRecoil: 0.5
+  recoilMax: 3
+  recoilRangeStart: 0.01
+  recoilRangeEnd: 0.9
+  x: 0
+  y: 0
+  spreadY: 0.5
 --- !u!114 &11435222
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13688,6 +13728,7 @@ MonoBehaviour:
   slotIndex: 0
   weight: 1
   netVar: {fileID: 0}
+  useSide: 0
   selected: 0
   damage: 70
   bulletsLeft: 20
@@ -13697,7 +13738,9 @@ MonoBehaviour:
   range: 250
   kickGO: {fileID: 417974}
   kickUp: 0.9
-  kickSideways: 0.5
+  kickSideMax: 0.5
+  kickSideStart: 0.08
+  kickSideEnd: 0.2
   sound: {fileID: 0}
   ammoFront: {fileID: 0}
   ammoBack: {fileID: 0}
@@ -13761,16 +13804,19 @@ MonoBehaviour:
   slotIndex: 0
   weight: 1
   netVar: {fileID: 0}
+  useSide: 0
   selected: 0
   damage: 33
   bulletsLeft: 30
-  bulletsPerMag: 30
+  bulletsPerMag: 3000
   magazines: 10
-  fireRate: 0.095
+  fireRate: 0.1
   range: 250
   kickGO: {fileID: 417974}
   kickUp: 0.5
-  kickSideways: 0.1
+  kickSideMax: 0.5
+  kickSideStart: 0.08
+  kickSideEnd: 0.2
   sound: {fileID: 0}
   ammoFront: {fileID: 0}
   ammoBack: {fileID: 0}
@@ -13791,7 +13837,7 @@ MonoBehaviour:
   FirstPersonPlayer: {fileID: 109704}
   HUD: {fileID: 155314}
   ThrowThing: {fileID: 150108}
-  ThirdPersonPlayer: {fileID: 151226}
+  ThirdPersonPlayer: {fileID: 144374}
 --- !u!114 &11450824
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14007,7 +14053,7 @@ MonoBehaviour:
   sniperScopeImg: {fileID: 0}
   scopeObj: {fileID: 0}
   sniperFovLevelMax: 1
-  sniperFovLevelIncrease: 15
+  sniperFovLevelIncrease: 20
   crosshair: {fileID: 0}
 --- !u!114 &11465426
 MonoBehaviour:
@@ -14049,7 +14095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7e5e2ba73c20d84698f69d1fcd753c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 0}
+  sound: {fileID: 8270880}
   soundDraw: {fileID: 0}
   soundFire: {fileID: 8300000, guid: a55fb40a54372e149817dcf8682738ae, type: 3}
   soundClipIn: {fileID: 8300000, guid: b95bfca842664d2489ce086a2fb1b13a, type: 3}
@@ -14206,6 +14252,17 @@ MonoBehaviour:
   isAuto: 1
   throwThing: {fileID: 0}
   manager: {fileID: 0}
+  reverse7: 0
+  spreadYShot: 0.008
+  recoil: 0
+  deRecoil: 2
+  addRecoil: 0.7
+  recoilMax: 2
+  recoilRangeStart: 0.01
+  recoilRangeEnd: 0.9
+  x: 0
+  y: 0
+  spreadY: 1
 --- !u!114 &11470746
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14282,7 +14339,7 @@ MonoBehaviour:
   speed: 8
   state: 0
   cameraGO: {fileID: 475080}
-  jumpSpeed: 8
+  jumpSpeed: 6
   ccNormalHeight: 1.8
   ccCrouchHeight: 0.8
   weaponWeight: 0
@@ -14345,7 +14402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMinePlayer: 0
-  lerpSpeed: 15
+  lerpSpeed: 22
   playerPos: {x: 0, y: 0, z: 0}
   snycPos: {x: 0, y: 0, z: 0}
   playerRotX: 0
@@ -14557,6 +14614,7 @@ MonoBehaviour:
   slotIndex: 0
   weight: 10
   netVar: {fileID: 0}
+  useSide: 0
   selected: 0
   damage: 115
   bulletsLeft: 10
@@ -14566,7 +14624,9 @@ MonoBehaviour:
   range: 250
   kickGO: {fileID: 417974}
   kickUp: 5.5
-  kickSideways: 0.5
+  kickSideMax: 0.5
+  kickSideStart: 0.08
+  kickSideEnd: 0.2
   sound: {fileID: 0}
   ammoFront: {fileID: 0}
   ammoBack: {fileID: 0}
@@ -14603,6 +14663,17 @@ MonoBehaviour:
   isAuto: 1
   throwThing: {fileID: 0}
   manager: {fileID: 0}
+  reverse7: 0
+  spreadYShot: 0.008
+  recoil: 0
+  deRecoil: 2
+  addRecoil: 0.5
+  recoilMax: 1.8
+  recoilRangeStart: 0.01
+  recoilRangeEnd: 0.9
+  x: 0
+  y: 0
+  spreadY: 0.5
 --- !u!124 &12499794
 Behaviour:
   m_ObjectHideFlags: 1
@@ -14610,6 +14681,19 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 173178}
   m_Enabled: 1
+--- !u!136 &13692052
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144374}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &13713050
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -15343,6 +15427,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

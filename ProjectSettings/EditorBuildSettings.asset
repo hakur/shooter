@@ -6,8 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Shooter/shooter_menu.unity
-  - enabled: 1
-    path: Assets/Shooter/shooter_sample.unity
+    path: Assets/Shooter/Scenes/shooter_start.unity
+  - enabled: 0
+    path: Assets/Shooter/Scenes/shooter_sample.unity
   - enabled: 0
     path: Assets/test.unity
+  - enabled: 1
+    path: Assets/Shooter/Scenes/ship.unity
+  - enabled: 1
+    path: Assets/Shooter/Scenes/select_map.unity
+  - enabled: 1
+    path: Assets/Shooter/Scenes/loading.unity
+  - enabled: 1
+    path: Assets/Shooter/Scenes/test.unity

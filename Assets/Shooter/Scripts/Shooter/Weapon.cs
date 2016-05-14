@@ -32,6 +32,8 @@ public class Weapon : MonoBehaviour {
 	public float weight = 1f;
 	[HideInInspector]
 	public NetworkSync netVar;
+	bool toleft = true;
+	public bool useSide = false;
 	
 	[Header("武器精度设置")]
 	[Header("武器基本配置")]
@@ -46,7 +48,10 @@ public class Weapon : MonoBehaviour {
 	[Header("后坐力对相机的影响设置")]
 		public Transform kickGO;
 		public float kickUp = 0.5f; //上下晃动最大范围 world camera kick up (rotation)
-		public float kickSideways = 0.5f; //左右晃动最大范围 world camera kick left or right (rotation)
+		private float kickSideways = 0f; //左右晃动最大范围 world camera kick left or right (rotation)
+		public float kickSideMax = 0.5f;
+		public float kickSideStart = 0.08f;
+		public float kickSideEnd = 0.2f;
 	[Header("武器动画列表")]
 	[Header("武器声音")]
 		[HideInInspector]
@@ -84,7 +89,30 @@ public class Weapon : MonoBehaviour {
 	}
 	
 	public void ApplyRecoil() {
-		kickGO.localRotation = Quaternion.Euler(kickGO.localRotation.eulerAngles - new Vector3(kickUp, Random.Range(-kickSideways, kickSideways), 0));
+		//kickGO.localRotation = Quaternion.Euler(kickGO.localRotation.eulerAngles - new Vector3(kickUp, Random.Range(-kickSideways, kickSideways), 0));
+		kickGO.localRotation = Quaternion.Euler(kickGO.localRotation.eulerAngles - new Vector3(kickUp, kickSideways, 0));
+		
+	}
+	
+	public void sideways() {
+		if(useSide) {
+			if(toleft) {
+				if(kickSideways < kickSideMax) {
+					kickSideways+=Random.Range(kickSideStart,kickSideEnd);
+				} else {
+					toleft=false;
+				}
+			} else {
+				if(kickSideways > -kickSideMax) {
+					kickSideways-=Random.Range(kickSideStart,kickSideEnd);
+				} else {
+					toleft = true;
+				}
+			}
+		} else {
+			Debug.Log("not side");
+			kickSideways = Random.Range(-kickSideways, kickSideways);
+		}
 	}
 	
 	public void GrenadeRemoveCoreComponent() {

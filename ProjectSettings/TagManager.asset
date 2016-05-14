@@ -9,6 +9,7 @@ TagManager:
   - CrossHair
   - WeaponSound
   - WeaponManager
+  - NetworkManager
   layers:
   - Default
   - TransparentFX

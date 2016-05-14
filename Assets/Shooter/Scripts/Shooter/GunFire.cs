@@ -4,6 +4,7 @@ namespace Shooter{
 public class GunFire : MonoBehaviour {
 	private Weapon weapon;
 	private float lastFireTime;
+	private float lastDeRecoilTime;
 	private RaycastHit hit;
 	private BulletHole bulletHoleCom;
 	private Vector2[] trajectory;
@@ -11,10 +12,20 @@ public class GunFire : MonoBehaviour {
 	private WeaponAnim anim;
 	public GameObject throwThing;
 	public WeaponManager manager;
+	[Header("武器精度")]
+	public bool reverse7 = false;
+	public float spreadYShot = 0.008f; //每一枪Y轴高度增加
+	public float recoil = 0f;
+	public float deRecoil = 0.5f;
+	public float addRecoil = 0.5f;
+	public float recoilMax = 3f;
+	public float recoilRangeStart = 0.01f;
+	public float recoilRangeEnd = 0.9f;
 	
 	
-	float x ;
-	float y ;
+	public float x ;
+	public float y ;
+	public float spreadY = 0.5f ;
 	Vector3 pos;
 	Vector3 dir;
 
@@ -24,8 +35,14 @@ public class GunFire : MonoBehaviour {
 		anim = gameObject.GetComponent<WeaponAnim>();
 	}
 	
+	void OnEnable() {
+		recoil = 0f;
+		weapon.useSide = false;
+	}
+	
 	void Start() {
 		lastFireTime = -weapon.fireRate;
+		lastDeRecoilTime = -weapon.fireRate;
 	}
 	
 	void LateUpdate() {
@@ -49,9 +66,19 @@ public class GunFire : MonoBehaviour {
 					weapon.isFiring = false;	
 				}
 			}
-			
+			if(!weapon.isFiring) {
+				recoil -= deRecoil * Time.deltaTime;
+				if(recoil < 0) {
+					recoil = 0;
+				}
+			}
 			if (Input.GetButtonDown ("Reload")){
 				StartCoroutine(Reload());
+			}
+			if(recoil >= recoilMax) {
+				weapon.useSide = true;
+			} else {
+				weapon.useSide = false;
 			}
 		}
 	}
@@ -76,6 +103,7 @@ public class GunFire : MonoBehaviour {
 		if(!isAuto) {
 			if(weapon.type == Weapon.types.sniper || weapon.type == Weapon.types.shotgun) {
 				weapon.isLoading = true;
+				weapon.useSide = false;
 				anim.FireAnim(true);
 			} else if(weapon.type == Weapon.types.grenade) {
 				anim.FireAnim(false);
@@ -84,17 +112,28 @@ public class GunFire : MonoBehaviour {
 			anim.FireAnim(true);
 		}
 		
-		weapon.bulletsLeft--;
-		pos = transform.parent.position;
+		x = y = 0;
+		weapon.sideways();
+		if(recoil >= recoilMax) {
+			recoil = recoilMax;
+			if(weapon.type != Weapon.types.sniper) {
+				
+				//达到最高后坐力 调整kickview的kickslideway
+			}
+			y = spreadYShot * (recoil - Random.Range(-spreadY,spreadY));
+		} else {
+			recoil += addRecoil * Random.Range(recoilRangeStart,recoilRangeEnd);
+			y = spreadYShot * recoil;
+		}
+		
 		
 		if(weapon.type == Weapon.types.sniper && !weapon.isAiming) {
-			x = Random.Range(-0.09f, 0.09f);
-			y = Random.Range(-0.09f, 0.09f); //狙击枪没开镜随机弹道
+			x = Random.Range(-0.03f, 0.03f);
+			y = Random.Range(-0.03f, 0.03f); //狙击枪没开镜随机弹道
 		}
-		x = 0;
-		y = 0;
 		
-
+		//weapon.bulletsLeft--;
+		pos = transform.parent.position;
 		dir = gameObject.transform.parent.transform.TransformDirection(new Vector3(x,y,1));
 		if (Physics.Raycast(pos, dir, out hit, weapon.range, weapon.layer)) {
 			bulletHoleCom.AddHole(hit);
