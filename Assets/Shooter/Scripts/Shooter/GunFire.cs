@@ -132,7 +132,7 @@ public class GunFire : MonoBehaviour {
 			y = Random.Range(-0.03f, 0.03f); //狙击枪没开镜随机弹道
 		}
 		
-		//weapon.bulletsLeft--;
+		weapon.bulletsLeft--;
 		pos = transform.parent.position;
 		dir = gameObject.transform.parent.transform.TransformDirection(new Vector3(x,y,1));
 		if (Physics.Raycast(pos, dir, out hit, weapon.range, weapon.layer)) {

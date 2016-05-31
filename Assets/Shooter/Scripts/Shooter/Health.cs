@@ -2,7 +2,7 @@
 using UnityEngine.Networking;
 using UnityEngine.UI;
 using System.Collections;
-
+namespace  Shooter{
 public class Health : NetworkBehaviour {
 	public float hp = 100;
 	public float hpmax = 100;
@@ -33,4 +33,5 @@ public class Health : NetworkBehaviour {
 	void Die() {
 		Debug.Log("die");
 	}
+}
 }

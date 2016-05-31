@@ -110,7 +110,7 @@ public class Weapon : MonoBehaviour {
 				}
 			}
 		} else {
-			Debug.Log("not side");
+			//Debug.Log("not side");
 			kickSideways = Random.Range(-kickSideways, kickSideways);
 		}
 	}

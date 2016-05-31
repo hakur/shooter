@@ -5617,6 +5617,7 @@ GameObject:
   - 114: {fileID: 11435222}
   - 114: {fileID: 11475566}
   - 114: {fileID: 11450062}
+  - 114: {fileID: 11447042}
   m_Layer: 0
   m_Name: Shooter
   m_TagString: Untagged
@@ -11757,8 +11758,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 181834}
-  m_LocalRotation: {x: -0.01663261, y: 0.7123863, z: -0.013945048, w: 0.70145184}
-  m_LocalPosition: {x: -0.4, y: 0.12, z: -0.52}
+  m_LocalRotation: {x: -0.016632611, y: 0.7123863, z: -0.013945048, w: 0.70145184}
+  m_LocalPosition: {x: -0.369, y: 0.040000003, z: -0.502}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 439172}
@@ -12619,7 +12620,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -12641,7 +12642,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!82 &8265302
 AudioSource:
   m_ObjectHideFlags: 1
@@ -13300,9 +13301,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8270880}
   soundDraw: {fileID: 8300000, guid: bf932751022f669498c9e9a412e36935, type: 3}
-  soundFire: {fileID: 8300000, guid: e068ddbf23eb70540a23b9370b9a0743, type: 3}
-  soundClipIn: {fileID: 8300000, guid: 863589f47504e6f4881108881127585b, type: 3}
-  soundClipOut: {fileID: 8300000, guid: 96aa73c7546396e4cb93175e511eba68, type: 3}
+  soundFire: {fileID: 8300000, guid: 1e1916874ba4fc240b14a48e8cdde7bb, type: 3}
+  soundClipIn: {fileID: 8300000, guid: cbb02017011ea3042becd4c3fe303941, type: 3}
+  soundClipOut: {fileID: 8300000, guid: 5ae11e8e58b7a1c42ac237c2c0a6d859, type: 3}
   soundLoad: {fileID: 0}
 --- !u!114 &11414140
 MonoBehaviour:
@@ -13572,7 +13573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8270880}
   soundDraw: {fileID: 8300000, guid: f2a10e343d245d143bcc38d2eab97f56, type: 3}
-  soundFire: {fileID: 8300000, guid: 1717e11c0123be44b8c7166c61185879, type: 3}
+  soundFire: {fileID: 8300000, guid: 35dc691821689f94096448c139163d90, type: 3}
   soundClipIn: {fileID: 8300000, guid: 5422581598d9f9643bcad1856b4de568, type: 3}
   soundClipOut: {fileID: 8300000, guid: d494d84714f3efe449ae8cc7df6e156a, type: 3}
   soundLoad: {fileID: 0}
@@ -13778,6 +13779,17 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &11447042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 156ed4b496f21bf4882a97c764ada18b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11449178
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14234,9 +14246,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8270880}
   soundDraw: {fileID: 8300000, guid: da5886e4bb11cc648997753d96949801, type: 3}
-  soundFire: {fileID: 8300000, guid: 9068c4b24ceaf764684635ea0488070b, type: 3}
-  soundClipIn: {fileID: 8300000, guid: f979f2ccd06efea48b76eac0dbb14e5b, type: 3}
-  soundClipOut: {fileID: 8300000, guid: e33ebe7d7b2b1e041a6c5aaea16bd183, type: 3}
+  soundFire: {fileID: 8300000, guid: 786909136620d964887b350d87726391, type: 3}
+  soundClipIn: {fileID: 8300000, guid: 2f99f69c442813d4b8e2994e3d128afe, type: 3}
+  soundClipOut: {fileID: 8300000, guid: 68a0d74611b8c1f48b0751e7e32e0f34, type: 3}
   soundLoad: {fileID: 8300000, guid: da5886e4bb11cc648997753d96949801, type: 3}
 --- !u!114 &11470660
 MonoBehaviour:

@@ -29,6 +29,7 @@ public class NetworkSync : NetworkBehaviour {
 	
 	void Start() {
 		isMinePlayer = isLocalPlayer;
+		GlobalVars.isLocalPlayer = isLocalPlayer;
 	}
 	
 	void LateUpdate() {
