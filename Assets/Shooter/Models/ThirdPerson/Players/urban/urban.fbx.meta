@@ -1,0 +1,883 @@
+fileFormatVersion: 2
+guid: a61e0493013219144937dab9af189cb5
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: ct_urban_reference
+    100002: ct_urban_reference_kruk_urban_D
+    100004: //RootNode
+    100006: ValveBiped.Bip01_Head1
+    100008: ValveBiped.Bip01_L_Calf
+    100010: ValveBiped.Bip01_L_Clavicle
+    100012: ValveBiped.Bip01_L_Finger0
+    100014: ValveBiped.Bip01_L_Finger01
+    100016: ValveBiped.Bip01_L_Finger02
+    100018: ValveBiped.Bip01_L_Finger1
+    100020: ValveBiped.Bip01_L_Finger11
+    100022: ValveBiped.Bip01_L_Finger12
+    100024: ValveBiped.Bip01_L_Finger2
+    100026: ValveBiped.Bip01_L_Finger21
+    100028: ValveBiped.Bip01_L_Finger22
+    100030: ValveBiped.Bip01_L_Foot
+    100032: ValveBiped.Bip01_L_Forearm
+    100034: ValveBiped.Bip01_L_Hand
+    100036: ValveBiped.Bip01_L_Thigh
+    100038: ValveBiped.Bip01_L_Toe0
+    100040: ValveBiped.Bip01_L_UpperArm
+    100042: ValveBiped.Bip01_L_Wrist
+    100044: ValveBiped.Bip01_Neck1
+    100046: ValveBiped.Bip01_Pelvis
+    100048: ValveBiped.Bip01_R_Calf
+    100050: ValveBiped.Bip01_R_Clavicle
+    100052: ValveBiped.Bip01_R_Finger0
+    100054: ValveBiped.Bip01_R_Finger01
+    100056: ValveBiped.Bip01_R_Finger02
+    100058: ValveBiped.Bip01_R_Finger1
+    100060: ValveBiped.Bip01_R_Finger11
+    100062: ValveBiped.Bip01_R_Finger12
+    100064: ValveBiped.Bip01_R_Finger2
+    100066: ValveBiped.Bip01_R_Finger21
+    100068: ValveBiped.Bip01_R_Finger22
+    100070: ValveBiped.Bip01_R_Foot
+    100072: ValveBiped.Bip01_R_Forearm
+    100074: ValveBiped.Bip01_R_Hand
+    100076: ValveBiped.Bip01_R_Thigh
+    100078: ValveBiped.Bip01_R_Toe0
+    100080: ValveBiped.Bip01_R_UpperArm
+    100082: ValveBiped.Bip01_R_Wrist
+    100084: ValveBiped.Bip01_Spine
+    100086: ValveBiped.Bip01_Spine1
+    100088: ValveBiped.Bip01_Spine2
+    100090: ValveBiped.Bip01_Spine4
+    100092: ValveBiped.forward
+    100094: ValveBiped.weapon_bone
+    100096: ValveBiped.weapon_bone_Clip
+    100098: ValveBiped.weapon_bone_LHand
+    100100: ValveBiped.weapon_bone_RHand
+    100102: w_mach_m249
+    100104: w_mach_m249_acog
+    100106: w_mach_m249_boxmag
+    100108: w_mach_m249_bullet
+    100110: w_mach_m249_front
+    100112: w_mach_m249_fullstock
+    100114: w_mach_m249_lam
+    100116: w_mach_m249_lens
+    100118: w_mach_m249_receiver
+    100120: w_mach_m249_receiveraddons
+    100122: w_mach_m249_sights
+    100124: w_mach_m249_Stuffed
+    100126: w_mach_m249_Stuffed2
+    100128: w_mach_m249_upper
+    400000: ct_urban_reference
+    400002: ct_urban_reference_kruk_urban_D
+    400004: //RootNode
+    400006: ValveBiped.Bip01_Head1
+    400008: ValveBiped.Bip01_L_Calf
+    400010: ValveBiped.Bip01_L_Clavicle
+    400012: ValveBiped.Bip01_L_Finger0
+    400014: ValveBiped.Bip01_L_Finger01
+    400016: ValveBiped.Bip01_L_Finger02
+    400018: ValveBiped.Bip01_L_Finger1
+    400020: ValveBiped.Bip01_L_Finger11
+    400022: ValveBiped.Bip01_L_Finger12
+    400024: ValveBiped.Bip01_L_Finger2
+    400026: ValveBiped.Bip01_L_Finger21
+    400028: ValveBiped.Bip01_L_Finger22
+    400030: ValveBiped.Bip01_L_Foot
+    400032: ValveBiped.Bip01_L_Forearm
+    400034: ValveBiped.Bip01_L_Hand
+    400036: ValveBiped.Bip01_L_Thigh
+    400038: ValveBiped.Bip01_L_Toe0
+    400040: ValveBiped.Bip01_L_UpperArm
+    400042: ValveBiped.Bip01_L_Wrist
+    400044: ValveBiped.Bip01_Neck1
+    400046: ValveBiped.Bip01_Pelvis
+    400048: ValveBiped.Bip01_R_Calf
+    400050: ValveBiped.Bip01_R_Clavicle
+    400052: ValveBiped.Bip01_R_Finger0
+    400054: ValveBiped.Bip01_R_Finger01
+    400056: ValveBiped.Bip01_R_Finger02
+    400058: ValveBiped.Bip01_R_Finger1
+    400060: ValveBiped.Bip01_R_Finger11
+    400062: ValveBiped.Bip01_R_Finger12
+    400064: ValveBiped.Bip01_R_Finger2
+    400066: ValveBiped.Bip01_R_Finger21
+    400068: ValveBiped.Bip01_R_Finger22
+    400070: ValveBiped.Bip01_R_Foot
+    400072: ValveBiped.Bip01_R_Forearm
+    400074: ValveBiped.Bip01_R_Hand
+    400076: ValveBiped.Bip01_R_Thigh
+    400078: ValveBiped.Bip01_R_Toe0
+    400080: ValveBiped.Bip01_R_UpperArm
+    400082: ValveBiped.Bip01_R_Wrist
+    400084: ValveBiped.Bip01_Spine
+    400086: ValveBiped.Bip01_Spine1
+    400088: ValveBiped.Bip01_Spine2
+    400090: ValveBiped.Bip01_Spine4
+    400092: ValveBiped.forward
+    400094: ValveBiped.weapon_bone
+    400096: ValveBiped.weapon_bone_Clip
+    400098: ValveBiped.weapon_bone_LHand
+    400100: ValveBiped.weapon_bone_RHand
+    400102: w_mach_m249
+    400104: w_mach_m249_acog
+    400106: w_mach_m249_boxmag
+    400108: w_mach_m249_bullet
+    400110: w_mach_m249_front
+    400112: w_mach_m249_fullstock
+    400114: w_mach_m249_lam
+    400116: w_mach_m249_lens
+    400118: w_mach_m249_receiver
+    400120: w_mach_m249_receiveraddons
+    400122: w_mach_m249_sights
+    400124: w_mach_m249_Stuffed
+    400126: w_mach_m249_Stuffed2
+    400128: w_mach_m249_upper
+    2300000: w_mach_m249
+    2300002: w_mach_m249_acog
+    2300004: w_mach_m249_boxmag
+    2300006: w_mach_m249_bullet
+    2300008: w_mach_m249_front
+    2300010: w_mach_m249_fullstock
+    2300012: w_mach_m249_lam
+    2300014: w_mach_m249_lens
+    2300016: w_mach_m249_receiver
+    2300018: w_mach_m249_receiveraddons
+    2300020: w_mach_m249_sights
+    2300022: w_mach_m249_Stuffed
+    2300024: w_mach_m249_Stuffed2
+    2300026: w_mach_m249_upper
+    3300000: w_mach_m249
+    3300002: w_mach_m249_acog
+    3300004: w_mach_m249_boxmag
+    3300006: w_mach_m249_bullet
+    3300008: w_mach_m249_front
+    3300010: w_mach_m249_fullstock
+    3300012: w_mach_m249_lam
+    3300014: w_mach_m249_lens
+    3300016: w_mach_m249_receiver
+    3300018: w_mach_m249_receiveraddons
+    3300020: w_mach_m249_sights
+    3300022: w_mach_m249_Stuffed
+    3300024: w_mach_m249_Stuffed2
+    3300026: w_mach_m249_upper
+    4300000: ct_urban_reference_kruk_urban_D
+    4300002: ct_urban_reference
+    4300004: w_mach_m249_lam
+    4300006: w_mach_m249_sights
+    4300008: w_mach_m249_lens
+    4300010: w_mach_m249_acog
+    4300012: w_mach_m249_Stuffed
+    4300014: w_mach_m249_Stuffed2
+    4300016: w_mach_m249_front
+    4300018: w_mach_m249_receiveraddons
+    4300020: w_mach_m249_receiver
+    4300022: w_mach_m249_fullstock
+    4300024: w_mach_m249_upper
+    4300026: w_mach_m249_bullet
+    4300028: w_mach_m249_boxmag
+    4300030: w_mach_m249
+    7400000: urban_run
+    7400002: urban_walk
+    7400004: urban_jump
+    7400006: urban_idle
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: ct_urban_reference
+    13700002: ct_urban_reference_kruk_urban_D
+  materials:
+    importMaterials: 1
+    materialName: 3
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: urban_idle
+      takeName: Animation
+      firstFrame: 76
+      lastFrame: 134
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ct_urban_reference
+        weight: 1
+      - path: ct_urban_reference_kruk_urban_D
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_L_Thigh
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_L_Thigh/ValveBiped.Bip01_L_Calf
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_L_Thigh/ValveBiped.Bip01_L_Calf/ValveBiped.Bip01_L_Foot
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_L_Thigh/ValveBiped.Bip01_L_Calf/ValveBiped.Bip01_L_Foot/ValveBiped.Bip01_L_Toe0
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_R_Thigh
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_R_Thigh/ValveBiped.Bip01_R_Calf
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_R_Thigh/ValveBiped.Bip01_R_Calf/ValveBiped.Bip01_R_Foot
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_R_Thigh/ValveBiped.Bip01_R_Calf/ValveBiped.Bip01_R_Foot/ValveBiped.Bip01_R_Toe0
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger0
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger0/ValveBiped.Bip01_L_Finger01
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger0/ValveBiped.Bip01_L_Finger01/ValveBiped.Bip01_L_Finger02
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger1
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger1/ValveBiped.Bip01_L_Finger11
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger1/ValveBiped.Bip01_L_Finger11/ValveBiped.Bip01_L_Finger12
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger2
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger2/ValveBiped.Bip01_L_Finger21
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger2/ValveBiped.Bip01_L_Finger21/ValveBiped.Bip01_L_Finger22
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Wrist
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_Neck1
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_Neck1/ValveBiped.Bip01_Head1
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_Neck1/ValveBiped.Bip01_Head1/ValveBiped.forward
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger0
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger0/ValveBiped.Bip01_R_Finger01
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger0/ValveBiped.Bip01_R_Finger01/ValveBiped.Bip01_R_Finger02
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger1
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger1/ValveBiped.Bip01_R_Finger11
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger1/ValveBiped.Bip01_R_Finger11/ValveBiped.Bip01_R_Finger12
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger2
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger2/ValveBiped.Bip01_R_Finger21
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger2/ValveBiped.Bip01_R_Finger21/ValveBiped.Bip01_R_Finger22
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Wrist
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.weapon_bone
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.weapon_bone/ValveBiped.weapon_bone_RHand
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.weapon_bone/ValveBiped.weapon_bone_RHand/ValveBiped.weapon_bone_LHand
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.weapon_bone/ValveBiped.weapon_bone_RHand/ValveBiped.weapon_bone_LHand/ValveBiped.weapon_bone_Clip
+        weight: 1
+      - path: w_mach_m249
+        weight: 1
+      - path: w_mach_m249_acog
+        weight: 1
+      - path: w_mach_m249_boxmag
+        weight: 1
+      - path: w_mach_m249_bullet
+        weight: 1
+      - path: w_mach_m249_front
+        weight: 1
+      - path: w_mach_m249_fullstock
+        weight: 1
+      - path: w_mach_m249_lam
+        weight: 1
+      - path: w_mach_m249_lens
+        weight: 1
+      - path: w_mach_m249_receiver
+        weight: 1
+      - path: w_mach_m249_receiveraddons
+        weight: 1
+      - path: w_mach_m249_sights
+        weight: 1
+      - path: w_mach_m249_Stuffed
+        weight: 1
+      - path: w_mach_m249_Stuffed2
+        weight: 1
+      - path: w_mach_m249_upper
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    - serializedVersion: 16
+      name: urban_run
+      takeName: Animation
+      firstFrame: 1
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ct_urban_reference
+        weight: 1
+      - path: ct_urban_reference_kruk_urban_D
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_L_Thigh
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_L_Thigh/ValveBiped.Bip01_L_Calf
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_L_Thigh/ValveBiped.Bip01_L_Calf/ValveBiped.Bip01_L_Foot
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_L_Thigh/ValveBiped.Bip01_L_Calf/ValveBiped.Bip01_L_Foot/ValveBiped.Bip01_L_Toe0
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_R_Thigh
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_R_Thigh/ValveBiped.Bip01_R_Calf
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_R_Thigh/ValveBiped.Bip01_R_Calf/ValveBiped.Bip01_R_Foot
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_R_Thigh/ValveBiped.Bip01_R_Calf/ValveBiped.Bip01_R_Foot/ValveBiped.Bip01_R_Toe0
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger0
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger0/ValveBiped.Bip01_L_Finger01
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger0/ValveBiped.Bip01_L_Finger01/ValveBiped.Bip01_L_Finger02
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger1
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger1/ValveBiped.Bip01_L_Finger11
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger1/ValveBiped.Bip01_L_Finger11/ValveBiped.Bip01_L_Finger12
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger2
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger2/ValveBiped.Bip01_L_Finger21
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger2/ValveBiped.Bip01_L_Finger21/ValveBiped.Bip01_L_Finger22
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Wrist
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_Neck1
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_Neck1/ValveBiped.Bip01_Head1
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_Neck1/ValveBiped.Bip01_Head1/ValveBiped.forward
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger0
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger0/ValveBiped.Bip01_R_Finger01
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger0/ValveBiped.Bip01_R_Finger01/ValveBiped.Bip01_R_Finger02
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger1
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger1/ValveBiped.Bip01_R_Finger11
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger1/ValveBiped.Bip01_R_Finger11/ValveBiped.Bip01_R_Finger12
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger2
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger2/ValveBiped.Bip01_R_Finger21
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger2/ValveBiped.Bip01_R_Finger21/ValveBiped.Bip01_R_Finger22
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Wrist
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.weapon_bone
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.weapon_bone/ValveBiped.weapon_bone_RHand
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.weapon_bone/ValveBiped.weapon_bone_RHand/ValveBiped.weapon_bone_LHand
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.weapon_bone/ValveBiped.weapon_bone_RHand/ValveBiped.weapon_bone_LHand/ValveBiped.weapon_bone_Clip
+        weight: 1
+      - path: w_mach_m249
+        weight: 1
+      - path: w_mach_m249_acog
+        weight: 1
+      - path: w_mach_m249_boxmag
+        weight: 1
+      - path: w_mach_m249_bullet
+        weight: 1
+      - path: w_mach_m249_front
+        weight: 1
+      - path: w_mach_m249_fullstock
+        weight: 1
+      - path: w_mach_m249_lam
+        weight: 1
+      - path: w_mach_m249_lens
+        weight: 1
+      - path: w_mach_m249_receiver
+        weight: 1
+      - path: w_mach_m249_receiveraddons
+        weight: 1
+      - path: w_mach_m249_sights
+        weight: 1
+      - path: w_mach_m249_Stuffed
+        weight: 1
+      - path: w_mach_m249_Stuffed2
+        weight: 1
+      - path: w_mach_m249_upper
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    - serializedVersion: 16
+      name: urban_walk
+      takeName: Animation
+      firstFrame: 23
+      lastFrame: 43
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ct_urban_reference
+        weight: 1
+      - path: ct_urban_reference_kruk_urban_D
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_L_Thigh
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_L_Thigh/ValveBiped.Bip01_L_Calf
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_L_Thigh/ValveBiped.Bip01_L_Calf/ValveBiped.Bip01_L_Foot
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_L_Thigh/ValveBiped.Bip01_L_Calf/ValveBiped.Bip01_L_Foot/ValveBiped.Bip01_L_Toe0
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_R_Thigh
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_R_Thigh/ValveBiped.Bip01_R_Calf
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_R_Thigh/ValveBiped.Bip01_R_Calf/ValveBiped.Bip01_R_Foot
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_R_Thigh/ValveBiped.Bip01_R_Calf/ValveBiped.Bip01_R_Foot/ValveBiped.Bip01_R_Toe0
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger0
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger0/ValveBiped.Bip01_L_Finger01
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger0/ValveBiped.Bip01_L_Finger01/ValveBiped.Bip01_L_Finger02
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger1
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger1/ValveBiped.Bip01_L_Finger11
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger1/ValveBiped.Bip01_L_Finger11/ValveBiped.Bip01_L_Finger12
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger2
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger2/ValveBiped.Bip01_L_Finger21
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger2/ValveBiped.Bip01_L_Finger21/ValveBiped.Bip01_L_Finger22
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Wrist
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_Neck1
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_Neck1/ValveBiped.Bip01_Head1
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_Neck1/ValveBiped.Bip01_Head1/ValveBiped.forward
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger0
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger0/ValveBiped.Bip01_R_Finger01
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger0/ValveBiped.Bip01_R_Finger01/ValveBiped.Bip01_R_Finger02
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger1
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger1/ValveBiped.Bip01_R_Finger11
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger1/ValveBiped.Bip01_R_Finger11/ValveBiped.Bip01_R_Finger12
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger2
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger2/ValveBiped.Bip01_R_Finger21
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger2/ValveBiped.Bip01_R_Finger21/ValveBiped.Bip01_R_Finger22
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Wrist
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.weapon_bone
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.weapon_bone/ValveBiped.weapon_bone_RHand
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.weapon_bone/ValveBiped.weapon_bone_RHand/ValveBiped.weapon_bone_LHand
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.weapon_bone/ValveBiped.weapon_bone_RHand/ValveBiped.weapon_bone_LHand/ValveBiped.weapon_bone_Clip
+        weight: 1
+      - path: w_mach_m249
+        weight: 1
+      - path: w_mach_m249_acog
+        weight: 1
+      - path: w_mach_m249_boxmag
+        weight: 1
+      - path: w_mach_m249_bullet
+        weight: 1
+      - path: w_mach_m249_front
+        weight: 1
+      - path: w_mach_m249_fullstock
+        weight: 1
+      - path: w_mach_m249_lam
+        weight: 1
+      - path: w_mach_m249_lens
+        weight: 1
+      - path: w_mach_m249_receiver
+        weight: 1
+      - path: w_mach_m249_receiveraddons
+        weight: 1
+      - path: w_mach_m249_sights
+        weight: 1
+      - path: w_mach_m249_Stuffed
+        weight: 1
+      - path: w_mach_m249_Stuffed2
+        weight: 1
+      - path: w_mach_m249_upper
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    - serializedVersion: 16
+      name: urban_jump
+      takeName: Animation
+      firstFrame: 46
+      lastFrame: 74
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ct_urban_reference
+        weight: 1
+      - path: ct_urban_reference_kruk_urban_D
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_L_Thigh
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_L_Thigh/ValveBiped.Bip01_L_Calf
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_L_Thigh/ValveBiped.Bip01_L_Calf/ValveBiped.Bip01_L_Foot
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_L_Thigh/ValveBiped.Bip01_L_Calf/ValveBiped.Bip01_L_Foot/ValveBiped.Bip01_L_Toe0
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_R_Thigh
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_R_Thigh/ValveBiped.Bip01_R_Calf
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_R_Thigh/ValveBiped.Bip01_R_Calf/ValveBiped.Bip01_R_Foot
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_R_Thigh/ValveBiped.Bip01_R_Calf/ValveBiped.Bip01_R_Foot/ValveBiped.Bip01_R_Toe0
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger0
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger0/ValveBiped.Bip01_L_Finger01
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger0/ValveBiped.Bip01_L_Finger01/ValveBiped.Bip01_L_Finger02
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger1
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger1/ValveBiped.Bip01_L_Finger11
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger1/ValveBiped.Bip01_L_Finger11/ValveBiped.Bip01_L_Finger12
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger2
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger2/ValveBiped.Bip01_L_Finger21
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Hand/ValveBiped.Bip01_L_Finger2/ValveBiped.Bip01_L_Finger21/ValveBiped.Bip01_L_Finger22
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_L_Clavicle/ValveBiped.Bip01_L_UpperArm/ValveBiped.Bip01_L_Forearm/ValveBiped.Bip01_L_Wrist
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_Neck1
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_Neck1/ValveBiped.Bip01_Head1
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_Neck1/ValveBiped.Bip01_Head1/ValveBiped.forward
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger0
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger0/ValveBiped.Bip01_R_Finger01
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger0/ValveBiped.Bip01_R_Finger01/ValveBiped.Bip01_R_Finger02
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger1
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger1/ValveBiped.Bip01_R_Finger11
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger1/ValveBiped.Bip01_R_Finger11/ValveBiped.Bip01_R_Finger12
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger2
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger2/ValveBiped.Bip01_R_Finger21
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Hand/ValveBiped.Bip01_R_Finger2/ValveBiped.Bip01_R_Finger21/ValveBiped.Bip01_R_Finger22
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.Bip01_Spine1/ValveBiped.Bip01_Spine2/ValveBiped.Bip01_Spine4/ValveBiped.Bip01_R_Clavicle/ValveBiped.Bip01_R_UpperArm/ValveBiped.Bip01_R_Forearm/ValveBiped.Bip01_R_Wrist
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.weapon_bone
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.weapon_bone/ValveBiped.weapon_bone_RHand
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.weapon_bone/ValveBiped.weapon_bone_RHand/ValveBiped.weapon_bone_LHand
+        weight: 1
+      - path: ValveBiped.Bip01_Pelvis/ValveBiped.Bip01_Spine/ValveBiped.weapon_bone/ValveBiped.weapon_bone_RHand/ValveBiped.weapon_bone_LHand/ValveBiped.weapon_bone_Clip
+        weight: 1
+      - path: w_mach_m249
+        weight: 1
+      - path: w_mach_m249_acog
+        weight: 1
+      - path: w_mach_m249_boxmag
+        weight: 1
+      - path: w_mach_m249_bullet
+        weight: 1
+      - path: w_mach_m249_front
+        weight: 1
+      - path: w_mach_m249_fullstock
+        weight: 1
+      - path: w_mach_m249_lam
+        weight: 1
+      - path: w_mach_m249_lens
+        weight: 1
+      - path: w_mach_m249_receiver
+        weight: 1
+      - path: w_mach_m249_receiveraddons
+        weight: 1
+      - path: w_mach_m249_sights
+        weight: 1
+      - path: w_mach_m249_Stuffed
+        weight: 1
+      - path: w_mach_m249_Stuffed2
+        weight: 1
+      - path: w_mach_m249_upper
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
